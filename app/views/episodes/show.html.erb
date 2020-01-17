@@ -1,0 +1,11 @@
+<h1>This is the EPISODE SHOW PAGE</h2>
+
+<h2><%= @episode.number %> - <%= @episode.date %></h2>
+
+<h2>Here is a lists of the guests who were on that show</h2>
+
+  <ul>
+  <% @episode.guests.each do |guest|%>
+    <li><%= link_to guest.name, guest_path(guest)  %>
+  <% end %>
+  </ul>
