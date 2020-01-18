@@ -1,5 +1,19 @@
 <h1>This is my APPEARANCES new page</h1>
 
+<h2>Here is where I display the errors</h2>
+  <% if @appearance.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@appearance.errors.count, "error") %> prohibited this appearance from being saved:</h2>
+ 
+    <ul>
+    <% @appearance.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+
 <%= form_for(@appearance) do |f| %>
   <%= f.label :guest %>: 
   <%= f.collection_select :guest_id, Guest.all, :id, :name%><br><br>

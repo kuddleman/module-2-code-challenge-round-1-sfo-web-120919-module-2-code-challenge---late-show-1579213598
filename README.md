@@ -119,7 +119,7 @@ Each Episode date should link to the show page for that Episode.
 
 DONE
 
-LEFT OFF HERE 1/17/20   10AM
+
 ### 6. Appearance Rating Validation
 
 The rating on an Appearance should be between 1 and 5 (inclusive - `1` and `5` are okay).
@@ -127,6 +127,9 @@ The rating on an Appearance should be between 1 and 5 (inclusive - `1` and `5` a
 - Add a validation to ensure that the rating is between 1 and 5.
 - Add handling for this error to the Appearance create action.
 - The validation error should be shown on the Appearance creation form when a user attempts to save an appearance with an invalid rating.
+
+DONE
+LEFT OFF HERE 1/18/20 at 10AM
 
 ### 7. Advanced: Additional Appearance Validation
 
